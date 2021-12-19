@@ -34,4 +34,5 @@ function getImageUrl(img_name, extension) {
 selector(".mobile-toggle").addEventListener("click", () => {
   selector(".l1").classList.toggle("l1-click");
   selector(".l2").classList.toggle("l2-click");
+  selector(".nav-links").classList.toggle("display-nav");
 });
