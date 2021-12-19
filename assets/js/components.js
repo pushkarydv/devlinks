@@ -9,7 +9,7 @@ const faq = [
       "There is an Report option available. Just report your issue there.Your No data will Be collected",
   },
   {
-    question: "Owner of websites listed in this tool",
+    question: "About owner of websites listed in this tool",
     answer:
       "This tool keeps a list of them but they belong to their respective owners. eg: React from Meta Open Source",
   },

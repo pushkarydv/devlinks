@@ -87,6 +87,9 @@ nav {
   text-decoration: none;
   color: inherit;
 }
+.main-link {
+  text-transform: capitalize;
+}
 .nav-links {
   flex-direction: column;
   gap: 2rem;
@@ -125,6 +128,10 @@ nav {
   font-weight: 600;
   font-size: 1.1rem;
   display: inline-block;
+}
+p {
+  margin: 0rem 1rem;
+  margin-bottom: 1rem;
 }
 .link-logo {
   width: 4rem;
@@ -178,11 +185,6 @@ nav {
   .links-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
-}
-@media only screen and (min-width: 1100px) {
-  .links-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
   .mobile-toggle {
     display: none;
   }
@@ -191,6 +193,13 @@ nav {
     flex-direction: row;
     position: inherit;
     width: inherit;
+    gap: 1rem;
+    height: inherit;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .links-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 }
 @media only screen and (min-width: 1300px) {

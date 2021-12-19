@@ -32,7 +32,7 @@ const hosting = [
 ];
 const js_world = [
   {
-    name: "react",
+    name: "react js",
     link: "https://reactjs.org/",
     docs: "https://reactjs.org/docs/getting-started.html",
     img: "react",
@@ -67,6 +67,18 @@ const js_world = [
     docs: "https://www.gatsbyjs.com/docs/",
     img: "gatsby",
   },
+  {
+    name: "vue js",
+    link: "https://vuejs.org/",
+    docs: "https://vuejs.org/v2/guide/",
+    img: "vuejs",
+  },
+  {
+    name: "electron",
+    link: "https://www.electronjs.org/",
+    docs: "https://www.electronjs.org/docs/latest",
+    img: "electron",
+  },
 ];
 const css_world = [
   {
@@ -80,6 +92,12 @@ const css_world = [
     link: "https://mui.com/",
     docs: "https://mui.com/getting-started/installation/",
     img: "mui",
+  },
+  {
+    name: "materialize css",
+    link: "https://materializecss.com/",
+    docs: "https://materializecss.com/getting-started.html",
+    img: "materialize",
   },
   {
     name: "post css",
