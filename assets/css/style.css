@@ -33,6 +33,15 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  background: var(--color1);
+}
+@supports (backdrop-filter: blur(16px)) {
+  nav {
+    background: transparent;
+    backdrop-filter: blur(16px);
+  }
 }
 .links-grid {
   display: grid;
@@ -133,7 +142,7 @@ nav {
   transform: rotate(45deg);
   width: 100%;
 }
-.nav-hidden {
+.no-display {
   display: none;
 }
 @media only screen and (min-width: 600px) {
