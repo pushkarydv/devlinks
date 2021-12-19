@@ -1,4 +1,4 @@
-const data = [
+const hosting = [
   {
     name: "github",
     link: "https://github.com/",
@@ -29,6 +29,8 @@ const data = [
     docs: "https://firebase.google.com/docs",
     img: "firebase",
   },
+];
+const js_world = [
   {
     name: "react",
     link: "https://reactjs.org/",
@@ -65,12 +67,8 @@ const data = [
     docs: "https://www.gatsbyjs.com/docs/",
     img: "gatsby",
   },
-  {
-    name: "bootstrap",
-    link: "https://getbootstrap.com/",
-    docs: "https://getbootstrap.com/docs",
-    img: "bootstrap",
-  },
+];
+const css_world = [
   {
     name: "tailwind css",
     link: "https://tailwindcss.com/",

@@ -19,6 +19,7 @@ body {
   font-family: "Poppins", sans-serif;
   /* 400,600,700 */
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 .flex {
@@ -89,8 +90,51 @@ nav {
   font-weight: 700;
   cursor: pointer;
 }
+.heading {
+  margin: 0.5rem 1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: inline-block;
+}
 .link-logo {
   width: 4rem;
+}
+.mobile-toggle {
+  border: none;
+  background: none;
+  height: 2rem;
+  aspect-ratio: 1;
+  position: relative;
+  z-index: 999;
+  cursor: pointer;
+}
+.line {
+  width: 2rem;
+  height: 0.3rem;
+  background: var(--color2);
+  border-radius: 0.15rem;
+  transition: all 0.3s ease;
+  position: absolute;
+}
+.l1 {
+  top: 0.4rem;
+}
+.l2 {
+  bottom: 0.4rem;
+  width: 60%;
+  right: 0;
+}
+.l1-click {
+  top: 0.7rem;
+  transform: rotate(-45deg);
+}
+.l2-click {
+  bottom: 0.7rem;
+  transform: rotate(45deg);
+  width: 100%;
+}
+.nav-hidden {
+  display: none;
 }
 @media only screen and (min-width: 600px) {
   .links-grid {
@@ -100,6 +144,9 @@ nav {
 @media only screen and (min-width: 800px) {
   .links-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .mobile-toggle {
+    display: none;
   }
 }
 @media only screen and (min-width: 1100px) {
