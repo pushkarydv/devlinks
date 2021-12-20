@@ -30,9 +30,12 @@ function displaySite(state, header) {
   wrapper.appendChild(heading);
   wrapper.appendChild(div);
 }
-displaySite(hosting, "Hosting");
-displaySite(js_world, "JS World");
-displaySite(css_world, "CSS world");
+function getMainPage() {
+  displaySite(hosting, "Hosting");
+  displaySite(js_world, "JS World");
+  displaySite(css_world, "CSS world");
+}
+getMainPage();
 function getImageUrl(img_name, extension) {
   return `./assets/images/${img_name}.${extension}`;
 }
@@ -52,7 +55,17 @@ function setFaq() {
       return `<div class="heading">${d.question}</div><p>${d.answer}</p>`;
     })
     .join(" ");
-  selector(".wrapper").innerHTML = pageData;
+  selector(".wrapper").innerHTML =
+    `<div class="heading">Some Frequently Asked Questions</div> <br />` +
+    pageData;
+}
+function setAbout() {
+  selector(".wrapper").innerHTML =
+    `<div class="heading">About Us</div>` + about;
+}
+function setContact() {
+  selector(".wrapper").innerHTML =
+    `<div class="heading">Contact Us</div>` + contact;
 }
 function removeActiveStates() {
   selectorAll(".page-target").forEach((target) => {
@@ -63,9 +76,31 @@ function removeActiveStates() {
 }
 selectorAll(".page-target").forEach((target) => {
   target.addEventListener("click", () => {
-    console.log(target.innerHTML.toLowerCase());
     removeActiveStates();
     target.classList.add("active-page");
     navState();
+    selector(".wrapper").innerHTML = "";
+    getPage(target.innerHTML.toLowerCase());
   });
 });
+function getPage(page) {
+  switch (page) {
+    case "home":
+      selector(
+        ".wrapper"
+      ).innerHTML = `<div class="header"></div><div class="links-grid dev-sites"></div>`;
+      getMainPage();
+      break;
+    case "about":
+      setAbout();
+      break;
+    case "faq":
+      setFaq();
+      break;
+    case "contact":
+      setContact();
+      break;
+    default:
+      selector(".wrapper").innerHTML = `Sorry Something Went Wrong`;
+  }
+}
