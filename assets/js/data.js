@@ -85,7 +85,7 @@ const css_world = [
     name: "tailwind css",
     link: "https://tailwindcss.com/",
     docs: "https://tailwindcss.com/docs/installation",
-    img: "netlify",
+    img: "tailwind",
   },
   {
     name: "mui",
