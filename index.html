@@ -33,6 +33,9 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
+    <div class="preloader">
+      <img src="./logo.svg" alt="" class="loader" />
+    </div>
     <nav class="flex">
       <div class="logo" onClick="getPage('home')">DEVURL</div>
       <button class="mobile-toggle">
@@ -49,6 +52,12 @@
 
     <noscript>Please Enable Javascript in your Browser</noscript>
     <div class="wrapper"></div>
+    <script>
+      const preloader = document.querySelector(".preloader");
+      window.addEventListener("load", function () {
+        preloader.classList.add("hide-preloader");
+      });
+    </script>
     <script src="./assets/js/data.js"></script>
     <script src="./assets/js/components.js"></script>
     <script src="./assets/js/app.js"></script>
