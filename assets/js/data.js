@@ -106,6 +106,12 @@ const css_world = [
     img: "postcss",
   },
   {
+    name: "bootstrap",
+    link: "https://getbootstrap.com/",
+    docs: "https://getbootstrap.com/docs/5.1/getting-started/introduction/",
+    img: "bootstrap",
+  },
+  {
     name: "sass",
     link: "https://sass-lang.com/",
     docs: "https://docs.github.com/en",
